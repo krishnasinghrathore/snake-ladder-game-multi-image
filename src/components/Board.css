@@ -1,0 +1,45 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 squares per row */
+  gap: 10px; /* Adjust the gap between squares if necessary */
+}
+
+.square {
+  position: relative;
+  width: 60px; /* Set a fixed width for each square */
+  height: 60px; /* Set a fixed height for each square */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc; /* Optional: add a border */
+  background-color: #fff; /* Background color for the squares */
+}
+
+.snake-image,
+.ladder-image {
+  position: absolute;
+  width: 100%; /* Stretch to fill the square width */
+  height: 100%; /* Stretch to fill the square height */
+  object-fit: contain; /* Maintain aspect ratio while filling the space */
+  pointer-events: none; /* Ensure images don't interfere with clicking */
+}
+
+.position-number {
+  position: absolute;
+  font-size: 12px; /* Adjust font size for the position numbers */
+  color: red; /* Optional: color for position numbers */
+}
+
+.down {
+  bottom: 0; /* Position below the snake */
+  left: 20%; /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  font-weight: bold;
+}
+
+.up {
+  top: 0; /* Position above the ladder */
+  left: 80%; /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  font-weight: bold;
+}

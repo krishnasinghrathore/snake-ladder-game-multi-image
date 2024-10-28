@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.player {
+  margin: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.game {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  //height: 300px; /* Adjust this as needed */
+  justify-content: space-between;
+}
+
+.message {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Pushes player info to the bottom */
+  height: 100%;
+}
+.scores .player {
+  margin: 10px;
+}
+
+.player-info {
+  margin-top: auto; /* Ensures player info aligns at the bottom */
+}
+
+button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.setup {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  justify-content: center; /* Center items horizontally */
+  margin: 20px; /* Optional: External margin around the setup */
+  padding: 10px; /* Optional: Internal padding for the setup container */
+  background-color: #f9f9f9; /* Optional: Light background color */
+  border-radius: 5px; /* Optional: Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Soft shadow for depth */
+}
+
+.setup label {
+  margin-right: 10px; /* Space between the label and input */
+  font-size: 16px; /* Adjust font size for visibility */
+}
+
+.setup input {
+  margin-left: 5px; /* Space between the label and the input field */
+  padding: 5px; /* Internal padding for the input field */
+  border: 1px solid #ccc; /* Border for the input field */
+  border-radius: 3px; /* Rounded corners for the input */
+}
+
+.setup button {
+  margin-left: 10px; /* Space between the input field and the button */
+  padding: 8px 16px; /* Internal padding for the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for the button */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.setup button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.roll-button {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  margin-left: 10px; /* Space between the input field and the button */
+  padding: 8px 16px; /* Internal padding for the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for the button */
+  background-color: #28a745; /* Green background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.roll-button:hover {
+  background-color: #218838; /* Darker shade on hover */
+}
+
+.roll-button:disabled {
+  background-color: #cccccc; /* Gray background for disabled state */
+  cursor: not-allowed; /* Not allowed cursor for disabled state */
+  color: #666666; /* Gray text for disabled state */
+}
+
+.dice-image {
+  width: 20px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Space between the image and text */
+}
